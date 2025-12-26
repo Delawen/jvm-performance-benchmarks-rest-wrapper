@@ -39,7 +39,7 @@ public class Benchmarks {
     @GET
     @Path("/nqueens")
     public byte[][] nqueens() {
-        return nqueens(r.nextInt(64));
+        return nqueens(r.nextBoolean() ? 16 : 64);
     }
 
 }
